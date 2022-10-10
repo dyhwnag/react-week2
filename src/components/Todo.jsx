@@ -66,7 +66,7 @@ const Todo = () => {
             return (
               <StTodo key={todo.id}>
                 <StTextWrap >
-                  <StyledLink to={`/products/${todo.id}`}><p>상세보기</p></StyledLink>
+                  <StyledLink to={`/detail/${todo.id}`}><p>상세보기</p></StyledLink>
                   <h1>{todo.title}</h1>
                   <p>{todo.body}</p>
                 </StTextWrap>
@@ -93,7 +93,7 @@ const Todo = () => {
             return (
               <StTodo key={todo.id}>
                 <StTextWrap>
-                  <StyledLink to={`/products/${todo.id}`}><p>상세보기</p></StyledLink>
+                  <StyledLink to={`/detail/${todo.id}`}><p>상세보기</p></StyledLink>
                   <h1>{todo.title}</h1>
                   <p>{todo.body}</p>
                 </StTextWrap>
