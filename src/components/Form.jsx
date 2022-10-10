@@ -35,21 +35,13 @@ const StInput = styled.input`
 `
 
 const Form = () => {
-
-    // todo 제목
+  
     const [inputTitle, setInputTitle] = useState('')
     const [inputBody, setInputBody] = useState('')
 
     const todos = useSelector((state) => state.todos.todos)
-    // 변경된 값 확인하기
-    // 스토어의 상태값을 반환해주는 역할
-    // 리덕스 스토어의 상태값이 바뀐 경우( 버튼 클릭 등의 이벤트를 통해 액션이 실행되어 상태값이 변경된 경우) 
-    // 바뀐 스토어의 상태값을 다시 가져와 컴포넌트를 렌더링 시킨다.
 
     const dispatch = useDispatch()
-    // 액션객체를 리듀서로 보내기위해선 useDispatch()라는 훅을 사용,  액션객체를 리듀서로 보내는 '전달자' 함수이다.
-    // 스토어의 내장함수 중 하나
-
 
     const onSubmitHandler = () => {
         if (inputTitle === "") return;
