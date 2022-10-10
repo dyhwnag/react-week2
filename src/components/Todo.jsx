@@ -54,7 +54,6 @@ const StyledLink = styled(Link)`
 
 const Todo = () => {
 
-  //todos.js에서 state.todos를 받아온다
   const { todos } = useSelector((state) => state.todos)
   const dispatch = useDispatch()
 
