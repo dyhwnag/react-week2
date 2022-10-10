@@ -1,5 +1,5 @@
 import React from "react";
-import Products from "../components/Products";
+import Detail from "../components/Detail";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import TodoList from "../components/TodoList";
 
@@ -9,7 +9,7 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<TodoList />} />
-                <Route path='/products/:id' element={<Products />} />
+                <Route path='/Detail/:id' element={<Detail />} />
             </Routes>
         </BrowserRouter>
     );
