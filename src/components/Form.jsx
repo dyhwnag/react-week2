@@ -39,7 +39,7 @@ const Form = () => {
     const [inputTitle, setInputTitle] = useState('')
     const [inputBody, setInputBody] = useState('')
 
-    const todos = useSelector((state) => state.todos.todos)
+    const { todos } = useSelector((state) => state.todos)
 
     const dispatch = useDispatch()
 
